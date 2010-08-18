@@ -1,0 +1,68 @@
+<div id="page_bottom" class="content">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".dropdown").hover(function() {
+				$(".dropdown dd ul").toggle();
+			});
+			
+			$(".dropdown dd ul li a").click(function() {
+				$(".dropdown dd ul").toggle();
+			});
+		});
+	</script>
+    
+    {if {page} == "home"}
+        {embed="basic/.dealerBody"}
+        {embed="basic/.clubSelector"}
+    {/if}
+
+    <div class="clear"></div>
+    <div class="slash_bar rounded"></div>
+	<div id="social_links" class="content">
+		<div>
+			<a id="rss" href="http://www.cobratourblog.com/feed/">RSS</a>
+			<a id="facebook" href="http://www.facebook.com/cobra?ref=ts">Facebook</a>
+			<a id="twitter" href="http://www.twitter.com/cobragolf">Twitter</a>
+		</div>
+	</div>
+	<div id="footer" class="rounded">
+		<ul class="footer_headers cover">
+			<li class="corporate">Corporate</li>
+			<li class="popular">Popular Links</li>
+			<li class="fitting">Fitting, Demo Events and Retailers</li>
+
+		</ul>
+		<div id="footer_links" class="cover">
+			<ul class="link_lists">
+				<li><a href="/contact">Contact Us</a></li>
+				<li><a href="/employment">Employment</a></li>
+				<li><a href="/faq">FAQs</a></li>
+				<li><a href="/history">History</a></li>
+				<li><a href="/legal-notices">Legal Notices</a></li>
+			</ul>
+			<ul class="link_lists">
+				<li><a href="/press-releases">Press Releases</a></li>
+				<li><a href="/privacy-policy">Privacy Policy</a></li>
+				<li><a href="/community-policy">Community Policies</a></li>
+				<li><a href="http://www.3point5.com/action/manufacturerLanding?orgKey=cobragolf">Cobra Staff Training</a></li>
+			</ul>
+			<ul class="link_lists">
+				<li><a href="/golf-clubs/Cobra-ZL-Driver">ZL Driver</a></li>
+				<li><a href="/golf-clubs/Cobra-S2-Driver">S2 Driver</a></li>
+				<li><a href="/golf-clubs/Cobra-Baffler-Hybrid">Baffler Rail H</a></li>
+				<li><a href="/golf-clubs/Cobra-Baffler-Rail-Fairway">Baffler Rail F</a></li>
+			</ul>
+			<ul class="link_lists">
+				<li><a href="/golf-clubs/Cobra-S2-Irons">S2 Irons</a></li>
+				<li><a href="/golf-clubs/Cobra-S2-Forged-Irons">S2 Forged</a></li>
+				<li><a href="#">Media Center</a></li>
+			</ul>
+			<ul class="link_lists">
+				<li><a href="#">Demo Days</a></li>
+				<li><a href="#">Dealer Locator</a></li>
+			</ul>
+            <div class="clear"></div>
+		</div>
+	</div>
+	<div id="legal">© 2010 Cobra Golf &amp; PUMA AG</div>
+</div>

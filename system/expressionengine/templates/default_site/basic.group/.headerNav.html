@@ -1,0 +1,111 @@
+<div id="top_bar">
+	<div class="container">
+		<a href="{path='site_index'}"><img class="cobraLogo" src="/images/ui/cobra_logo.jpg" width="263" height="64"></a>
+		<ul id="top_links">
+			<li><a href="">E-News Sign Up</a></li>
+			<li><a href="">My Account</a></li>
+			<li class="flags">
+				<dl id="locator_country_select" class="dropdown">
+					<dt><a><span>Select a Country</span></a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.cobragolf.com.au/au_locator.aspx"><img class="flag" src="/images/international/flag_AU.gif"><span>Austrailia</span></a></li>
+							<li><a href="http://www.cobragolf.de/dealers/default.asp"><img class="flag" src="/images/international/flag_AT.gif"><span>Austria</span></a></li>
+							<li><a href="http://www.cobragolf.ca/locator.aspx"><img class="flag" src="/images/international/flag_CA.gif"><span>Canada</span></a></li>
+							<li><a href="http://www.cobragolf.com.fr/dealers/default.asp"><img class="flag" src="/images/international/flag_FR.gif"><span>France</span></a></li>
+							<li><a href="http://www.cobragolf.de/dealers/default.asp"><img class="flag" src="/images/international/flag_DE.gif"><span>Germany</span></a></li>
+							<li><a href="http://www2.cobragolf.co.jp/shop/"><img class="flag" src="/images/international/flag_JP.gif"><span>Japan</span></a></li>
+							<li><a href="http://cobragolf.co.kr/shop/shop.shtml"><img class="flag" src="/images/international/flag_KR.gif"><span>Korea</span></a></li>
+							<li><a href="http://www.cobragolf.com.my/dealers/default.asp"><img class="flag" src="/images/international/flag_MY.gif"><span>Myanmar</span></a></li>
+							<li><a href="http://www.cobragolf.com.sg/dealers/default.asp"><img class="flag" src="/images/international/flag_SG.gif"><span>Singapore</span></a></li>
+							<li><a href="http://www.cobragolf.se/customfitting/default.asp"><img class="flag" src="/images/international/flag_SE.gif"><span>Sweden</span></a></li>
+							<li><a href="http://www.cobragolf.de/dealers/default.asp"><img class="flag" src="/images/international/flag_CH.gif"><span>China</span></a></li>
+							<li><a href="http://www.cobra.co.th/dealers/default.asp"><img class="flag" src="/images/international/flag_TH.gif"><span>Thailand</span></a></li>
+							<li><a href="http://www.cobragolf.co.uk/cggb_locator.aspx"><img class="flag" src="/images/international/flag_UK.gif"><span>United Kingdom</span></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<div id="nav_container">
+	<ul id="top_nav">
+		<li id="clubs"> 
+			<a href="{path='golf-clubs'}" title="Cobra Clubs" class="top_level_nav"><span>Cobra Clubs</span></a>
+			<div id="clubs_menu">
+				<ul>				
+				{exp:channel:categories channel="clubs" parent_only="yes" dynamic="no" style="linear"}
+				 	<li><a href="{path='golf-clubs/{category_url_title}'}" class="item">{category_name}</a> 
+						<div class="showclubs">
+							<ul>
+								{exp:channel:entries channel="clubs" category="{category_id}" orderby="ClubsOrderBy" sort="asc" dynamic="no"}
+								<li><a href="{url_title_path="golf-clubs/"}">{if NavigationThumbnail}<img src="{NavigationThumbnail}">{/if}<span>{Name}</span></a></li>
+								{/exp:channel:entries}
+							</ul>
+						</div>
+					</li>					
+				{/exp:channel:categories}			
+				</ul>	
+			</div>	
+		</li>
+		<li id="technology">
+			<a href="" title="Cobra Technology" class="top_level_nav"><span>Cobra Technology</span></a>
+			<div class="coming_soon">
+				<ul>
+					<li><a href="" class="coming_soon">COMING SOON</a></li>
+				</ul>
+			</div>
+		</li>
+		<li id="fitting">
+			<a href="" title="Cobra Club Fitting" class="top_level_nav"><span>Cobra Club Fitting</span></a>
+			<div class="coming_soon">
+				<ul>
+					<li><a href="" class="coming_soon">COMING SOON</a></li>
+				</ul>
+			</div>
+		</li>		
+		<li id="pros">
+			<a href="" title="Cobra Pros on Tour" class="top_level_nav"><span>Cobra Pros on Tour</span></a>
+			<div id="accessories_menu">
+				<ul>
+{exp:channel:entries channel="TourPros" orderby="ProLastName" sort="asc"  dynamic="no"}
+	                        <li><a href="{url_title_path="cobra-tour/"}">{ProFirstName} {ProLastName}</a></li>
+{/exp:channel:entries}
+				</ul>
+			</div>
+
+		</li>
+		<li id="accessories"> 
+			<a href="" title="Cobra Accessories" class="top_level_nav"><span>Cobra Accessories</span></a>
+
+			<div id="accessories_menu">
+				<ul>
+                {exp:channel:entries channel="AccessoryTypes" orderby="AccTypeName" sort="asc" dynamic="no"}
+                            <li><a href="{url_title_path="accessories/"}">{AccTypeName}</a></li>
+                {/exp:channel:entries}
+				</ul>
+			</div>	
+		</li>			
+		<li id="about_us">
+
+			<a href="" title="About Us" class="top_level_nav"><span>About Us</span></a>
+			<div class="coming_soon">
+				<ul>
+					<li><a href="" class="coming_soon">COMING SOON</a></li>
+				</ul>
+			</div>
+		</li>		
+		<li id="dealer">
+
+			<a href="" title="Dealer Locator" class="top_level_nav"><span>Dealer Locator</span></a>
+		</li>
+		<li class="search_box">
+		<input id="search" value="Search" type="text">
+		<input id="search_button" type="button">
+	</li>
+	</ul>
+</div>
+

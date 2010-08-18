@@ -1,0 +1,79 @@
+.playa-droppanes { position: relative; -webkit-user-select: none; -moz-user-select: none; }
+.playa-droppanes table { position: relative; padding: 0; width: 100%; }
+
+
+/*-- buttons --*/
+.playa-droppanes td.pdp-btns { vertical-align: middle; }
+.playa-droppanes td.pdp-btns a { display: block; width: 32px; height: 26px; background: no-repeat 0 -26px; cursor: pointer; }
+.playa-droppanes td.pdp-btns a:active { background-position: 0 -52px; }
+.playa-droppanes td.pdp-btns a.disabled { background-position: 0 0; cursor: default; }
+.playa-droppanes td.pdp-btns a.select { background-image: url(../images/btn_select.png); }
+.playa-droppanes td.pdp-btns a.deselect { background-image: url(../images/btn_deselect.png); }
+
+
+/*-- drop panes --*/
+.playa-droppanes td.pdp { width: 50%; padding: 1px;
+	border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }
+.playa-droppanes td.pdp.pdp-hover { background: #bfc9d3; }
+.playa-droppanes td.pdp.pdp-hidefocus { outline: none; }
+
+.playa-droppanes td.pdp .pdp-scrollpane { position: relative; overflow: auto; border: 1px solid #b6c0c2; background: #fff;
+	border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
+
+/* scrollbar */
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar { width: 10px; height: 10px; } /* the scrollbar area */
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar-track:vertical   { border-left: 1px solid #aaa; background: -webkit-gradient(linear, 0 0, 100% 0, from(#c2c2c2), to(#d9d9d9)); -webkit-border-top-right-radius: 2px; -webkit-border-bottom-right-radius: 2px; }
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar-track:horizontal { border-top:  1px solid #aaa; background: -webkit-gradient(linear, 0 0, 0 100%, from(#c2c2c2), to(#d9d9d9)); }
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar-thumb { -webkit-border-radius: 5px; }
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar-thumb:vertical   { background: -webkit-gradient(linear, 0 0, 100% 0, from(#aaa), color-stop(0.1, #aaa), color-stop(0.1, #f5f5f5), to(#e5e5e5)); -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1); }
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar-thumb:horizontal { background: -webkit-gradient(linear, 0 0, 0 100%, from(#aaa), color-stop(0.1, #aaa), color-stop(0.1, #f5f5f5), to(#e5e5e5)); -webkit-box-shadow: 1px 0 0 rgba(0,0,0,0.1); }
+.playa-droppanes td.pdp .pdp-scrollpane::-webkit-scrollbar-corner { border: solid #aaa; border-width: 1px 0 0 1px; }
+
+/* filters */
+.playa-droppanes td.pdp .filters .filter { position: relative; margin-top: 1px; padding: 3px 48px 3px 4px; border-bottom: 1px solid #bbb; background: #e5e5e5 url(../images/filter_bg.png) repeat-x; }
+
+.playa-droppanes td.pdp .filters .filter a { display: block; position: absolute; width: 20px; height: 20px; background: no-repeat 0 -20px; cursor: pointer; }
+.playa-droppanes td.pdp .filters .filter a:active { background-position: 0 -40px; }
+.playa-droppanes td.pdp .filters .filter a.disabled { background-position: 0 0; cursor: default; }
+.playa-droppanes td.pdp .filters .filter a.remove { right: 24px; background-image: url(../images/filter_remove.png); }
+.playa-droppanes td.pdp .filters .filter a.add { right: 4px; background-image: url(../images/filter_add.png); }
+
+.playa-droppanes td.pdp .filters .search { padding: 3px 92px 3px 4px; *padding: 2px 48px 2px 4px; }
+.playa-droppanes td.pdp .filters .search a { top: 3px; }
+.playa-droppanes td.pdp .filters .search a.erase { display: none; right: 49px; background: url(../images/search_erase.png) no-repeat 50% 50%; cursor: default; }
+.playa-droppanes td.pdp .filters .search label { display: block; cursor: text; }
+.playa-droppanes td.pdp .filters .search label span { display: block; position: absolute; top: 4px; left: 9px; padding-left: 16px; height: 18px; background: url(../images/search_icon.png) no-repeat 0 50%; }
+.playa-droppanes td.pdp .filters .search label span span { position: static; padding: 0; height: auto; background: none; line-height: 18px; font-weight: normal; color: rgba(0,0,0,0.5); }
+.playa-droppanes td.pdp .filters .search label input { margin: 0; padding: 3px 21px 2px; border: 1px solid; border-color: #888 #999 #aaa; width: 100%; *width: auto; height: 13px; background: #fff url(../images/search_bg.png) repeat-x; outline: none;
+	border-radius: 9px; -webkit-border-radius: 9px; -moz-border-radius: 9px;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75); -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.75); }
+
+/* limit */
+.playa-droppanes td.pdp .limit { margin: 3px 0 1px; border-top: 1px solid #bbb; padding: 3px 10px; color: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#fff)); }
+
+/* custom selects for webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.playa-droppanes td.pdp select { border: 1px solid #aaa; padding: 0 16px 0 6px; height: 16px;
+		-webkit-appearance: none;
+		-webkit-border-radius: 9px;
+		background: url(../images/filter_selectbg.png) no-repeat 100% 50%;
+		-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75); }
+}
+
+/* lists */
+.playa-droppanes td.pdp ul, .playa-droppanes.pdp-helper { margin: 4px 4px 0 4px; padding: 0; list-style-type: none; }
+.playa-droppanes li { position: relative; z-index: 1; padding-bottom: 1px; }
+.playa-droppanes li a { display: inline-block; position: relative; padding: 2px 10px 2px 18px; font-size: 12px; line-height: 14px; color: #333 !important; text-shadow: 0 1px #fff; text-decoration: none; cursor: default;
+	border-radius: 9px; -webkit-border-radius: 9px; -moz-border-radius: 9px; }
+.playa-droppanes li a span { display: block; position: absolute; top: 50%; left: 5px; margin-top: -9px; font-size: 20px; line-height: 18px; }
+
+.playa-droppanes li:hover a { background: #eee; }
+
+.playa-droppanes li.pdp-active a { background: #ddd;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#ccc)); background: -moz-linear-gradient(top, #ddd, #ccc);
+	-webkit-box-shadow: 1px 1px 0 #999; -moz-box-shadow: 1px 1px 0 #999; }
+
+.playa-droppanes li.pdp-caboose { visibility: hidden; height: 0; padding: 0; }
+.playa-droppanes li.pdp-placeholder { display: none; }
+.playa-droppanes li.pdp-insertion { height: 5px; }

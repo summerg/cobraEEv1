@@ -1,0 +1,28 @@
+
+<div id="gallery" class="pagination_control widget dark">
+	<div class="padding-9">
+        <h3>Gallery</h3>
+		<div id="right_col_gallery_window" class="pagination_window">
+			<div style="left: 0px;" id="right_col_gallery_scroller" class="pagination_scroller">
+                {exp:channel_images:images entry_id="{embed:entryID}"}
+                <a href="{image:url:large}" id="Gallery__ct{image:id}_GalleryLink" class="image_link"><img src="{image:url:small}" id="Gallery__ct{image:id}_GalleryImage" class="gallery_thumb" alt="{image:title}"></a>
+                {/exp:channel_images:images}
+			</div>
+		</div>
+	</div>
+	<div class="padding-9">
+		<table class="gallery_nav" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td><a href="#" class="pagination_prev">Previous</a></td>
+                {exp:channel_images:images entry_id="{embed:entryID}"}
+                    {if {image:count} == 1 || {image:count} == 4 || {image:count} == 7 || {image:count} == 10 || {image:count} == 13 || {image:count} == 16 || {image:count} == 19 || {image:count} == 22}
+                        <td><a href="#" id="Pagination__ctl{image:count}_PageLink" class="pagination_page {if {image:count} == 1 } selected {/if}" data="{image:count}"></a></td>
+                    {/if}
+                {/exp:channel_images:images}
+				<td><a href="#" class="pagination_next">Next</a></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+</div>

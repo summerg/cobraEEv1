@@ -1,0 +1,27 @@
+#clubs_overview_left{float:left; display:inline; margin:0 0 0 40px}
+#clubs_overview_right{float:right; display:inline; margin:0 40px 0 0}
+
+/*div.custom_button{float:right; display:inline; margin:10px 10px 0 0}
+div.custom_button a{color:#FFF; font-size:12px; line-height:26px; font-weight:bold; text-decoration:none; text-align:center; height:26px; width:133px; display:block; background:url(../images/products/overview/overview_button_light.png) left top no-repeat}
+div.custom_button a:hover{color:#F2CD02; background-position:0 -26px}*/
+
+#clubs_overview ul{padding:20px 0 0 20px; _padding:0; _margin:20px 0 0 20px; width:430px}
+#clubs_overview ul li{list-style:none; padding-bottom:30px}
+#clubs_overview ul li img, #clubs_overview ul li div{float:left; display:inline}
+#clubs_overview ul li img{margin:0 20px 0 0}
+#clubs_overview ul li div{width:300px; _width:280px}
+#clubs_overview ul li div h2{margin:0 0 5px 0; font-size:16px; color:#333}
+#clubs_overview ul li div span{color:#666}
+#clubs_overview ul li div span a{color:#333; font-weight:bold; text-decoration:none}
+#clubs_overview ul li div span a:hover{text-decoration:underline}
+#clubs_overview #drivers, #clubs_overview #fairways, #clubs_overview #utilities, #clubs_overview #irons{width:443px; margin-bottom:30px}
+
+/*div.overview_bottom{background:url(../images/products/overview/club_overview_bottom.png) left top no-repeat; width:443px; height:7px; font-size:0; } */
+
+#clubs_overview .cover{border:1px solid #ccc; background-color:#FFF; padding-bottom:20px; -moz-border-radius-bottomleft:5px; -moz-border-radius-bottomright:5px; -webkit-border-bottom-left-radius:5px; -webkit-border-bottom-right-radius:5px}
+
+.overviewHeader{padding:10px; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px; -webkit-border-bottom-left-radius:0px; -webkit-border-bottom-right-radius:0px; border-top-width:1px; border-right-width:1px; border-left-width:1px; border-top-style:solid; border-right-style:solid; border-left-style:solid; border-top-color:#ccc; border-right-color:#ccc; border-left-color:#ccc; font-family:arial,serif}
+
+.mens{background-image:-moz-linear-gradient(top,#fff,#d9d9d9); background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#d9d9d9)); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff',EndColorStr='#d9d9d9'); -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff',EndColorStr='#d9d9d9')"; /* IE8 */color:#333}
+
+.womens{background-image:-moz-linear-gradient(top,#80b3d0,#3785b3); background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#80b3d0),color-stop(1,#3785b3)); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#80b3d0',EndColorStr='#3785b3'); -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#80b3d0',EndColorStr='#3785b3')"; /* IE8 */color:#fff}

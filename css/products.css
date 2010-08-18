@@ -1,0 +1,91 @@
+/* Product Page Specific */
+
+/* Description */
+ul.club-description-list { list-style:none; margin-left:0; }
+ul.club-description-list li { background:url(/images/products/tech_trip_dots_2.gif) left top no-repeat; padding-left:25px; margin-bottom:0.75em; }
+ul.club-description-list li h2 { font-size:1.16em; margin-bottom:0; text-transform:uppercase; }
+
+
+/* Technology Tab */
+.technology-list { list-style:none; margin-left:0; }
+.technology-list li { border-bottom:1px solid #ccc; padding:15px 0; }
+.technology-list li.last { border-bottom:none; padding-bottom:0; }
+.technology-list li img { margin-right:15px; float:left; }
+.technology-list li div.tech_desc { width:385px; float:left; }
+.technology-list li div.tech_desc h3{ padding-left:25px; background:url(/images/products/tech_trip_dots.png) left top no-repeat; }
+.technology-list li div.tech_desc p { color:#666; }
+
+
+/* Spec Table */
+#spec_table { margin-bottom:0; }
+#spec_table tr, #shaft_table tr{ color:#555; }
+#spec_table th { text-align:center; background:url(/images/products/spec_table_bg.jpg) no-repeat scroll left top transparent; border-right:1px solid #ccc; }
+#spec_table th.last { border-right:none; }
+#spec_table td.first { border-right:1px solid #ccc; }
+#spec_table tr.row_color{background-color:#E8E8E8}
+#spec_table tr.spec_header{font-size:11px; color:#333; font-weight:bold; line-height:11px}
+
+#spec_table tr.spec_header td{background:url(/images/products/spec_table_bg.jpg) left top no-repeat; border-right:1px solid #CCC}
+#spec_table tr td, #shaft_table tr td{text-align:center; padding:.5em}
+#spec_table tr td.driver_model{font-weight:bold; color:#333; border-right:1px solid #CCC}
+#spec_table tr td.last{border:none}
+#specifications div.bottom{margin:0 0 0 -2px; padding:0}
+
+img.club_grip, img.club_shaft { border:1px solid #ccc; margin-bottom:0.5em; }
+
+/* Shaft */
+.shaft_table { width:606px; }
+.shaft_table th, .shaft_table td { padding:8px; }
+.shaft_table th { border-bottom:1px solid #ccc; }
+
+/* Grip */
+
+/* Right Column */
+/* Video Box */
+#video p { color:#999; margin:9px 0 0 9px; }
+#video p strong { color:#fff; }
+#video a img { border:1px solid transparent; }
+#video a:hover img { border:1px solid #ffcc00; }
+#right_col #videobox{display:none}
+
+
+/* 360 Viewer */
+#threesixty { height:79px; }
+#threesixty a { color:#fff; font-size:1.42em; font-weight:bold; text-decoration:none; background:url(/images/360_arrow.gif) right top no-repeat; display:block; width:120px; height:25px; float:left; margin:30px 0 0 18px; outline:none; }
+#threesixty a:hover { background:url(/images/360_arrow_over.gif) right top no-repeat; }
+#threesixty a span { color:#ffcc00; }
+#threesixty img { float:left; margin:0 0 0 55px; }
+
+
+/* Gallery */
+#gallery #right_col_gallery_window{ overflow:hidden; position:relative; width:296px; height:71px; margin:0px; padding:0px;}
+#gallery #right_col_gallery_scroller{width:9999px; position:absolute; left:0px; margin:0px; padding:0px}
+#gallery img.gallery_thumb{float:left; display:inline; padding:0px; margin:0 10px 0 0}
+#gallery a.image_link img { border:1px solid #000000; }
+#gallery a.image_link:hover img { border:1px solid #ffcc00; }
+table.gallery_nav{ width:80px; margin:0px auto; }
+table.gallery_nav td{width:20px; padding:0px}
+table.gallery_nav a { outline:none; }
+a.pagination_prev, a.pagination_next { display:block; width:17px; height:17px; margin:0 1px 0 2px; text-indent:-9999px; }
+a.pagination_prev { background:transparent url(/images/ui/gallery_arrow_left.jpg) no-repeat top right; }
+a.pagination_next { background:transparent url(/images/ui/gallery_arrow_right.jpg) no-repeat top left; }
+a.pagination_prev:hover { background-position:top left; }
+a.pagination_next:hover { background-position:top right; }
+#gallery table.gallery_nav td a.pagination_page{display:block; background:url(/images/products/gallery_dot.jpg) left top no-repeat; width:17px; height:17px; padding:0px; margin:0px 0px 0px 2px}
+#gallery table.gallery_nav td a.selected{background:url(/images/products/gallery_dot_on.jpg) left top no-repeat}
+/*#gallery h2{ color:#fff; }*/
+
+
+/* Demo */
+#demo h3 { color:#f3c303; margin-bottom:0.25em; }
+#demo p { color:#ccc; margin-bottom:0.5em; }
+#demo #demo_zip { margin-right:10px; width:100px; }
+
+
+/* Drivers Performance Guide */
+#performance_guide{float:left; display:inline; width:440px; height:225px; margin:0; padding:10px 0 0 18px; background:url(/images/products/driver_overview/performance_guide_bg.jpg) left top no-repeat; position:relative}
+#performance_guide h2{margin:0 0 0 5px; font-size:16px; font-weight:bold; color:#FFF}
+#performance_guide h2 span{font-size:16px; font-weight:bold; color:#FC0}
+#performance_guide a{position:absolute; left:38px; top:41px; color:#FFF; font-weight:bold; text-decoration:none}
+#performance_guide a:hover{color:#FC0}
+

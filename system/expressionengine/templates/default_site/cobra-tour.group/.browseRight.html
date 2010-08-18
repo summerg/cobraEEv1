@@ -1,0 +1,13 @@
+
+
+            <div class="widget dark player-gallery">
+                <div class="padding-9">
+                    <h3>Cobra Tour Pros</h3>
+                    <p class="light-gray">Select a player below to learn more about our Cobra Tour Staff players.</p>
+                    <ul class="team-members">
+{exp:channel:entries channel="TourPros" orderby="ProLastName" sort="asc"  dynamic="no"}
+                        <li><a href="{url_title_path="cobra-tour/"}"><img src="{ProThumbnail}" width="50" /><span>{ProFirstName} {ProLastName}</span></a></li>
+{/exp:channel:entries}
+                    </ul>
+                </div>
+            </div>

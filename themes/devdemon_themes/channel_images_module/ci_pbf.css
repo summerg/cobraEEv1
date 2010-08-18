@@ -1,0 +1,35 @@
+#CImagesField {padding:0 20px;}
+#CImagesField .TopBar {padding-bottom:2px; background:#FAFAFA; border:1px solid #CAD0D5; min-height:27px}
+#CImagesField .TopBar .Buttons {height:20px; padding:5px; background:#3C464F; position:relative;}
+#CImagesField .TopBar .Buttons .SelectBtn {background:url(select_images_btn.jpg) no-repeat; width:200px; height:20px; display:block; float:left; margin:0 5px 0 0;}
+#CImagesField .TopBar .Buttons .SelectBtn object {}
+#CImagesField .TopBar .Buttons .UploadBtn {background:url(upload_images_btn.jpg) no-repeat; width:140px; height:20px; cursor:pointer; display:block; float:left; text-indent:-9999px}
+#CImagesField .TopBar .Buttons .UploadProgress {padding:2px; position:absolute; top:2px; right:5px; width:300px; background:url(imageupload_status_repeat.jpg) repeat-x; margin:3px 0 0 0;}
+#CImagesField .TopBar .Buttons .UploadProgress div.progress {height:15px; width:0%; background:#108002 url(imageupload_status_repeat_r.jpg) repeat-x; overflow:visible}
+#CImagesField .TopBar .Buttons .UploadProgress div.progress span {height:14px; width:290px; padding:1px 0 0 5px; display:block; font-size:11px; color:#333}
+#CImagesField .TopBar .Files {padding:5px 5px 1px 5px; min-height:25px;}
+#CImagesField .TopBar .Files .File {height:16px; background-color:#C5D9FF; border:1px solid #7FAAFF; color:#000; display:block; float:left; margin:0 3px 3px 0; padding:2px 2px 2px 20px;}
+#CImagesField .TopBar .Files .File a {backgroun-repeat:no-repeat; width:16px; height:16px; display:block; float:right; margin-left:3px; text-indent:-9999px;}
+#CImagesField .TopBar .Files .Queued {background:#C5D9FF url(../images/queue.png) no-repeat 2px 2px;}
+#CImagesField .TopBar .Files .Uploading {background:#EFDE2C url(../images/spinner.gif) no-repeat 2px 2px;}
+#CImagesField .TopBar .Files .Done {background:#68EF1D url(../images/tick.png) no-repeat 2px 2px;}
+#CImagesField .TopBar .Files .Error {background:#EF1D25 url(../images/delete.png) no-repeat 2px 2px;}
+
+#CImagesField .Assigned {background:#FAFAFA; border:1px solid #CAD0D5;}
+#CImagesField .Assigned .bar {background:#929CA5 url(sub_header.jpg) repeat-x; height:38px; padding:2px 0 5px 5px; color:#fff; text-transform:uppercase}
+#CImagesField .Assigned .Headers {padding:5px 0 0 1%; font-weight:bold;}
+#CImagesField .Assigned .iOne {width:5%; float:left; min-height:15px;}
+#CImagesField .Assigned .iTwo {width:7%; float:left; min-height:15px;}
+#CImagesField .Assigned .iThree {width:10%; float:left; min-height:15px;}
+#CImagesField .Assigned .iFour {width:20%; float:left; min-height:15px;}
+#CImagesField .Assigned .iFive {width:25%; float:left; min-height:15px;}
+#CImagesField .Assigned .iSix {width:15%; float:left; min-height:15px;}
+#CImagesField .Assigned .iSeven {width:7%; float:left; min-height:15px;}
+#CImagesField .Assigned .iEight {width:5%; float:left; min-height:15px;}
+#CImagesField .Assigned .NoImages {}
+#CImagesField .Assigned .Images {}
+#CImagesField .Assigned .Images .Image {min-height:20px; float:left; padding:5px 0 5px 2%; border-bottom:1px solid #CAD0D5; width:98%}
+#CImagesField .Assigned .Images .Odd {background:#EDF1F4}
+#CImagesField .Assigned .Images .gIcon {text-indent:-9999px;}
+#CImagesField .Assigned .Images .PrimaryImage {background:#FBF9EA; border:2px solid #FFF6AF}
+#CImagesField .Assigned .Images button {width:40px; height:18px; background:url(save_btn.jpg) no-repeat; text-indent:-9999px; border:0}

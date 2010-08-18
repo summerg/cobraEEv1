@@ -1,0 +1,38 @@
+
+
+<div class="widget {if embed:gender =="womens"}blue{/if}">
+{exp:channel:categories channel="clubs"  show="{if embed:gender =="womens"}5{/if}|{embed:catID}" style="linear"}    
+    {if {parent_id} > 0 }
+        <h2 class="stratum">{category_name}</h2 >
+            
+            <div class="btn-container">
+                <a href="#" target="_blank" class="btn">{category_name} Technology</a>
+                <div id="driver_tech_gallery_scroller" class="pagination_scroller">
+                {exp:channel:entries channel="Technologies" category="{embed:catID}" orderby="TechName" sort="asc" dynamic="no"}
+                     <a href="{ClubPageImage}" rel="{TechName} - {TechDescription}" class="technology_link" style="display:none;">{category_name} Technology</a>
+                {/exp:channel:entries }
+                </div>
+                
+                {if embed:comparison_image}<a href="embed:comparison_image" target="_blank" class="btn">{category_name} Comparison</a>{/if}
+                <div class="clear"></div>
+            </div>
+            
+            <div class="padding-15">
+                <ul class="product-list">
+                {exp:channel:entries channel="Clubs" category="{embed:catID}" orderby="ClubsOrderBy" sort="asc" dynamic="no"}
+                     <li class="product">
+                          <div class="span-2">
+                            <a href="{url_title_path=golf-clubs/}"><img src="{IndexThumbnail}" alt="{Name}" /></a>
+                          </div>
+                          <div class="span-9 desc">
+                            <h3>{Name} </h3>
+                            <p>{ShortDesc} <a href="{url_title_path=golf-clubs/}">Learn more</a></p>
+                          </div>
+                          <div class="clear"></div>
+                     </li> 
+                {/exp:channel:entries}
+                </ul>
+            </div>
+    {/if}
+{/exp:channel:categories}
+</div>

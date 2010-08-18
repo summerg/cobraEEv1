@@ -1,0 +1,137 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<title>{title} - Cobra Golf</title>
+<meta http-equiv="Content-Type" content="text/html; charset={charset}">
+<meta name="description" content="{MetaDescription}">
+
+{embed="basic/.globalHead"}
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".dropdown").hover(function() {
+            $(".dropdown dd ul").toggle();
+        });
+        
+        $(".dropdown dd ul li a").click(function() {
+            $(".dropdown dd ul").toggle();
+        });
+    });
+    $(function() {
+        $(".accordion").accordion({active:1, autoHeight:false, collapsible:true});
+    });
+</script>
+
+</head>
+<body><div class="site-wrapper">
+    {embed="basic/.headerNav"}
+</div>
+<div class="site-wrapper">
+    <div class="content faq">
+        <div class="widget">
+            <h1 class="stratum header-bar">Frequently Asked Questions</h1>
+		</div>
+            
+        {exp:channel:categories channel="FAQs" dynamic="no" style="linear"}
+        <div class="widget">
+            <h2 class="stratum">{category_name}</h2>
+            <div class="padding-15">
+                <div class="accordion">
+                    {exp:channel:entries channel="FAQs" category="{category_id}" sort="asc" dynamic="no"}
+                    <h3><a href="#">{FAQQuestion}</a></h3>
+                    <div>
+                        {FAQAnswer}
+                    </div>
+                    {/exp:channel:entries}
+                </div>                      
+            </div>
+        </div>
+        {/exp:channel:categories}
+        <!--
+        <div class="widget">
+            <h2 class="stratum">Website</h2>
+            <div class="padding-15">
+                <div class="accordion">
+                    <h3><a href="#">Can I order Cobra Golf products on your website?</a></h3>
+                    <div>
+                        <p>Cobra Golf does not currently support online ordering. Please visit your local authorized Cobra Golf dealer to make a purchase or place an order.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="widget">
+            <h2 class="stratum">Golf Clubs</h2>
+            <div class="padding-15">
+                <div class="accordion">
+                    <h3><a href="#">I have Cobra Golf Clubs that need to be repaired/returned. Who do I contact?</a></h3>
+                    <div>
+                        <p>We suggest contacting the dealer where you originally purchased the clubs. However, you may contact the Cobra Consumer Relations Department at: 800-917-3300.</p>
+                    </div>
+                    <h3><a href="#">What kind of a warranty do Cobra products carry?</a></h3>
+                    <div>
+                        <h4>Limited One-Year Warranty</h4>
+                        <p>Cobra warrants its products for a period of one year from the date of purchase against defects in materials or workmanship. Should any product fail to perform for either of the above reasons, Cobra will repair it or, at our option, replace it with an equivalent product at no charge. If the date of purchase is unavailable, this warranty shall begin on the product manufacture date. Cobra reserves the right to inspect all warranty claims to determine the extent of warranty application. Cobra does not sell or return component parts. All products returned for warranty claims become the property of Cobra. Unauthorized returns will not be accepted. This warranty provides specific legal rights. Other rights may exist, which may vary from state to state. Cobra may amend this warranty policy at any time.</p>
+                        <h4>Customer Claims Procedure</h4>
+                        <p>To obtain warranty benefits, the defective product and a statement of the claimed defect must be provided to the authorized Cobra Golf Shop from whom the goods were originally purchased.</p>
+                        <h4>Limited Liability</h4>
+                        <p>Cobra will not be liable for any failure or delay in performance due in whole or in part to any cause beyond Cobra's reasonable control including, but not limited to, strikes, riots, wars, fire, acts of God, or acts of compliance with any law or government regulation. In no event shall Cobra be liable to Buyer for (i) any special, indirect, incidental or consequential damages, or (ii) any damages resulting from loss of use or profit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="widget">
+            <h2 class="stratum">General</h2>
+            <div class="padding-15">
+                <div class="accordion">
+                    <h3><a href="#">There is a product in your catalog that I would like, but I cannot find it at my local dealer. How do I get it?</a></h3>
+                    <div>
+                        <p>Your local authorized Cobra Golf dealer can order any item currently in our product line. Please see your local Cobra Golf dealer for details.</p>
+                    </div>
+                    <h3><a href="#">How do I register my new Cobra Golf products?</a></h3>
+                    <div>
+                        <p>You may register your Cobra Golf products at: <a href="http://www.cobragolf.com/myaccount/productregistration.aspx">http://www.cobragolf.com/myaccount/productregistration.aspx</a></p>
+                        <p>Or you can mail in the registration card that came with your purchase. There is no need to do both.</p>
+                    </div>
+                    <h3><a href="#">Will Cobra Golf make a product donation to my charitable organization or special event?</a></h3>
+                    <div>
+                        <p>We receive many requests for merchandise throughout the course of a year. The cost of honoring all such requests would be prohibitive, and, because we do not want to discriminate by honoring some and not others, it is company policy to refrain from providing complimentary merchandise. We hope you understand our position in this matter.</p>
+                    </div>
+                    <h3><a href="#">Where can I find any employment opportunities at Cobra Golf?</a></h3>
+                    <div>
+                        <p>Employment opportunities can be found at:<br />
+                        <a href="http://www.cobragolf.com/corporate/employment.asp">http://www.cobragolf.com/corporate/employment.asp</a></p>
+                    </div>
+                    <h3><a href="#">What is your mailing address?</a></h3>
+                    <div>
+                        <p><strong>Cobra-PUMA Golf</strong><br />
+                        1818 Aston Avenue<br />
+                        Carlsbad, CA 92008<br />
+                        Toll free number: 800-917-3300</p>
+                    </div>
+                    <h3><a href="#">Does Cobra Golf distribute complimentary merchandise? (Hats, etc.)</a></h3>
+                    <div>
+                        <p>We receive many requests for merchandise throughout the course of a year. The cost of honoring all such requests would be prohibitive, and, because we do not want to discriminate by honoring some and not others, it is company policy to refrain from providing complimentary merchandise. We hope you understand our position in this matter.</p>
+                    </div>
+                    <h3><a href="#">How can I find my closest Authorized Cobra Golf dealer?</a></h3>
+                    <div>
+                        <p>Cobra Golf products are sold at many dealers nationwide. Please check the dealer locator at: http://www.cobragolf.com/dealers/default.asp to find a dealer in your area.</p>
+                    </div>
+                    <h3><a href="#">Where can I get your Annual Report?</a></h3>
+                    <div>
+                        <p>The Annual Report for Fortune Brands (Parent company to Cobra Golf) can be found at: <a href="http://www.fortunebrands.com">http://www.fortunebrands.com</a> Click on "Investor Info." under "Corporate Information" on the left hand menu.</p>
+                    </div>
+                    <h3><a href="#">Where can I find Cobra Golf press releases?</a></h3>
+                    <div>
+                        <p><a href="http://www.cobragolf.com/corporate/default.asp">http://www.cobragolf.com/corporate/default.asp</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	-->
+    {embed="basic/.footer"}
+</div>
+</body>
+</html>

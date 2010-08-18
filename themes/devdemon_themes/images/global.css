@@ -1,0 +1,83 @@
+.clear:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clear {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clear {height: 1%;}
+.clear {display: block;}
+/* End hide from IE-mac */
+
+
+.gIcon {height:16px; display:block; padding-left:20px; background-repeat:no-repeat; outline:0; }
+.UploadIcon {background-image:url(upload.png)}
+.SearchIcon {background-image:url(magnifier.png)}
+.AddIcon {background-image:url(plus.png)}
+.EditIcon {background-image:url(edit.png)}
+.MoveIcon {background-image:url(arrow_move.png); cursor:move}
+.DeleteIcon {background-image:url(delete.png)}
+.LoadingIcon {background-image:url(spinner.gif) !important}
+.QueuedIcon {background-image:url(clock.png)}
+.SuccessIcon {background-image:url(tick.png)}
+.StarIcon {background-image:url(star.png)}
+.StarGreyIcon {background-image:url(star_empty.png)}
+.GoIcon {background-image:url(arrow_right.png)}
+.DiscIcon {background-image:url(disc.png)}
+
+.FloatL {float:left}
+.FloatR {float:right}
+.hidden {display:none;}
+
+.gButton {background:#FFAC47 url(btn_bg.gif) repeat-x; border-color:#ED6502 #A04300 #A04300 #ED6502; border-style:solid; border-width:1px; color:#fff; cursor:pointer;font-family:arial,helvetica,sans-serif; font-size:12px; font-weight:bold; padding:0 7px 1px; text-align:center}
+
+/* Tables */
+table.tablesorter {font-family:arial; background-color: #CDCDCD; font-size: 8pt; width: 100%; border-collapse:collapse; text-align: left;}
+table.tablesorter thead tr {background:transparent url(sort_row_bg.gif) repeat-x 0 50%;}
+table.tablesorter thead tr th {color:#000; border: 1px solid #FFF; font-size: 8pt; padding: 4px;}
+table.tablesorter thead tr .header span {background-image: url(ts_bg.gif); background-repeat: no-repeat; background-position: center right; cursor: pointer; display:block}
+table.tablesorter tbody {border-left:#CDCDCD 1px solid;}
+table.tablesorter tbody td {color: #3D3D3D; padding: 4px; background-color: #FFF; vertical-align: top; border-bottom:#CDCDCD 1px solid; border-right:#CDCDCD 1px solid;}
+table.tablesorter tbody tr.odd td {background-color:#EEF4F9;}
+table.tablesorter tbody tr.over td {background-color:#E1FAD8;}
+table.tablesorter thead tr .headerSortUp span {background-image: url(asc.gif);}
+table.tablesorter thead tr .headerSortDown span {background-image: url(desc.gif);}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {background:url(sort_row_bg_on.gif) no-repeat scroll 0 0; border-bottom:1px solid #FFF; border-right:1px solid #FFF; padding-bottom:2px;}
+table.tablesorter tfoot tr td {background-color: #768E9D; padding:5px; color:#fff; font-weight:bold;}
+table.tablesorter tfoot tr td a {color:#fff;}
+table.tablesorter tfoot tr td a:hover {text-decoration:underline;}
+
+a.multiSelect {	background: #FFF url(dropdown.gif) right center no-repeat; border: solid 1px #BBB; padding-right: 20px; position: relative; cursor: default; text-decoration: none; color: black; display: -moz-inline-stack; display: inline-block; vertical-align: top;}
+a.multiSelect:link, a.multiSelect:visited, a.multiSelect:hover, a.multiSelect:active {color: black; text-decoration: none;}
+a.multiSelect span {margin: 1px 0px 1px 3px; overflow: hidden; display: -moz-inline-stack; display: inline-block; white-space: nowrap;}
+a.multiSelect.hover {background-image: url(dropdown_hover.gif);}
+a.multiSelect.active, a.multiSelect.focus {border: inset 1px #000;}
+a.multiSelect.active {background-image: url(dropdown_active.gif);}
+.multiSelectOptions {margin-top: -1px; overflow-y: auto; overflow-x: hidden; border: solid 1px #B2B2B2; background: #FFF;}
+.multiSelectOptions LABEL {padding:4px; display: block; white-space: nowrap;}
+.multiSelectOptions LABEL.optGroup {font-weight: bold;}
+.multiSelectOptions .optGroupContainer LABEL {padding-left: 10px;}
+.multiSelectOptions.optGroupHasCheckboxes .optGroupContainer LABEL {padding-left: 18px;}
+.multiSelectOptions input {vertical-align: middle; margin-right:5px;}
+.multiSelectOptions LABEL.checked {background-color: #dce5f8;}
+.multiSelectOptions LABEL.selectAll {border-bottom: dotted 1px #CCC;}
+.multiSelectOptions LABEL.hover {background-color: #3399ff; color:white;}
+
+/* AutoComplete */
+.ac_results {padding: 0px; border: 1px solid black;	background-color: white; overflow: hidden; z-index: 99999;}
+.ac_results ul {width: 100%; list-style-position: outside; list-style: none; padding: 0; margin: 0;}
+.ac_results li {margin: 0px; padding: 2px 5px; cursor: default;	display: block;	font: menu;	font-size: 12px; line-height: 16px;	overflow: hidden; position:relative;}
+.ac_results li.ac_odd {background-color: #eee;}
+.ac_results li.ac_over {background-color: #74CFC5; color: white;}
+.ac_loading { background: white url('spinnerblack.gif') right center no-repeat;}
+
+.DevForm {}
+.DevForm {font-size:12px}
+.DevForm .Section {margin:0 0 10px; padding:0; background:#FAFAFA; border:1px solid #D6D6D6}
+.DevForm .Section .sHead {height:15px; background:#6F8992; padding:6px; color:#fff; font-weight:bold;}
+.DevForm .Elem {padding:6px; border-bottom:1px solid #CAD0D5;}
+.DevForm .Elem .left {width:150px; margin:0 20px 0 0; float:left;}
+.DevForm .Elem .left label {font-weight:bold;}
+.DevForm .Elem .left p.exp {}
+.DevForm .Elem .right {width:600px; float:left;}
+.DevForm .Elem .right .text {width:400px; padding:3px; border:1px solid #ccc;}
+.DevForm .Elem .right textarea {width:400px; padding:3px; border:1px solid #ccc;}
+.DevForm .ElemOdd {background:#E8F0F4;}
+.DevForm .box {margin:0}
+.DevForm strong {font-size:12px}

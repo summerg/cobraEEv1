@@ -1,0 +1,28 @@
+#mainContent .TopStrip {background:#E1FAD8 none repeat scroll 0 0; border:1px solid #CAD0D5; height:30px; padding:0 5px;}
+#mainContent .TopStrip .Section {float:left; height:26px; padding-top:4px; margin-right:10px;}
+#mainContent .TopStrip .Assigned {background:#A1DF8B}
+#mainContent .TopStrip input {}
+#mainContent .TopStrip label {font-weight:bold;}
+
+#WeblogsCollector {}
+
+#mainContent .WeblogSection {width:450px; float:left; margin:10px 10px 0 0;}
+#mainContent .WeblogSection .Section .Elem .left {width:auto;}
+#mainContent .WeblogSection .VerifyPath {padding-left:18px; display:inline-block;}
+#mainContent .SubmitBtn .LoadingIcon {background-repeat:no-repeat; padding:3px 16px 0 0;}
+#mainContent .SettingsSaved {padding:5px 0 5px 20px; color:#009933; font-weight:bold; background:url(../images/tick.png) no-repeat 0 4px;}
+
+#mainContent .ImageSizes {}
+#mainContent .ImageSizes .header {font-weight:bold; padding:0 0 5px;}
+#mainContent .ImageSizes .one {width:80px; margin:0 15px 0 0; float:left;}
+#mainContent .ImageSizes .two {width:60px; margin:0 15px 0 0; float:left;}
+#mainContent .ImageSizes .three {width:65px; margin:0 15px 0 0; float:left;}
+#mainContent .ImageSizes .four {width:60px; margin:0 15px 0 0; float:left;}
+#mainContent .ImageSizes .five {width:50px; margin:0 15px 0 0; float:left;}
+#mainContent .ImageSizes .AddSize {margin:10px 0 0; padding:0 0 0 20px; background:url(../images/plus.png) no-repeat; display:block;}
+#mainContent .ImageSizes .DelSize {margin:0; padding:0 0 0 20px; background:url(../images/delete.png) no-repeat; float:left; display:block;}
+#mainContent .ImageSizes .ImageSizesResult {}
+#mainContent .ImageSizes .ImageSizesResult .size {}
+#mainContent .ImageSizes .ImageSizesResult .size input {width:50px;}
+#DevDemonMCP .ImageSizes .ImageSizesResult .one input {width:75px;}
+#mainContent .ImageSizes .ImageSizesResult .five {padding:6px 0 0 0;}

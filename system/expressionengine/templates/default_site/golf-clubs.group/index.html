@@ -1,0 +1,148 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+{exp:channel:entries channel="clubs" limit="1" require_entry="yes"}
+{if no_results}
+content
+{/if}
+
+<title>{Name} : {SubTitle} - Cobra Golf</title>
+<meta http-equiv="Content-Type" content="text/html; charset={charset}">
+<meta name="description" content="{ShortDesc}">
+
+{embed="basic/.globalHead"}
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("ol.technology-list li:last").addClass("last");
+		$("table").attr('cellspacing', '0', 'cellpadding', '0', 'border', '0');
+		$("table#spec_table tr:even").addClass("row_color");
+		$("table#spec_table th:last").addClass("last");
+		$("table#spec_table td:first-child").addClass("first");
+	});
+</script>
+
+</head>
+<body>
+<div class="site-wrapper">
+	{embed="basic/.headerNav"}
+
+	<div id="banner" class="clear">
+		<img src="{PageHeader}" alt="{Name}" width="960" height="314">
+	</div>
+</div>
+<div class="site-wrapper">
+		<div class="content">
+			<div id="left_col" class="wide-col col-gutter">
+				<div class="product_overview">
+					<h1>{Name}</h1>
+					<h4>{SubTitle}</h4>
+					{Description}
+				</div>
+		
+				{if RelatedTechnologies}
+				<div id="club-technology" class="widget">
+					<h2 class="stratum">Technology</h2>
+					<div class="padding-15">
+						<ol class="technology-list">
+						{RelatedTechnologies}
+							<li>
+								<img src="{ClubPageImage}" width="167">
+								<div class="tech_desc">
+									<h3>{TechName}</h3>
+									<p>{TechDescription}</p>
+								</div>
+								<div class="clear"></div>
+							</li>
+						{/RelatedTechnologies}
+						</ol>
+					</div>
+				</div>
+				{/if}
+		
+				{if Specifications}
+				<div id="specifications" class="widget">
+					<h2 class="stratum">Specifications</h2>
+					{Specifications}
+				</div>
+				{/if}
+		
+				{if RelatedShafts}
+				<div id="shaft" class="widget">
+					<h2 class="stratum">Shaft</h2>
+					<div class="btn-container"><a href="/supporting/CustomShafts.pdf" class="btn">Custom Shafts</a></div>
+					<div class="padding-15">
+						{RelatedShafts}
+						<img class="club_shaft" src="{ShaftImage}" width="586">
+						<h3>{ShaftName}</h3>
+						<p>{ShaftDescriptionShort}</p>
+						{ShaftTable}
+						{/RelatedShafts}
+					</div>
+				</div>
+				{/if}
+		
+				{if RelatedGrips}
+				<div id="grip" class="widget">
+					<h2 class="stratum">Grip</h2>
+					<div class="padding-15">
+						{RelatedGrips}
+						<img class="club_grip" src="{GripImage}" width="586">
+						<h3>{GripName}</h3>
+						{/RelatedGrips}
+					</div>
+				</div>
+				{/if}
+                
+                
+                
+<script type="text/javascript">
+var zenbox_params = {};
+zenbox_params.tab_id = "ask_us";
+zenbox_params.tab_color = "black";
+zenbox_params.title = "Cobra Golf Customer Service";
+zenbox_params.text = "How may we help you? Please fill in details below, and we'll get back to you as soon as possible.";
+zenbox_params.tag = "dropbox";
+zenbox_params.url = "cobragolf.zendesk.com";
+</script>
+
+<style type='text/css'>@import url('http://assets0.zendesk.com/external/zenbox/overlay.css');</style>
+<script type='text/javascript' src='http://assets0.zendesk.com/external/zenbox/overlay.js'></script>
+			</div>
+		
+			<div id="right_col" class="slim-col">
+            
+            {if RelatedVideos}
+                {RelatedVideos}
+				<div id="video" class="widget dark">
+					<div class="padding-9">
+						<a href="{VideosFile}" id="videolink" class="fancybox video_link rounded"><img src="{VideosStill}"></a>
+						<p><strong>{VideosTitle}</strong><br />
+						{VideosFeaturing}</p>
+					</div>
+				</div>
+				<div id="videobox"></div>
+                {/RelatedVideos}
+            {/if}
+		
+            {if Related360s}
+                {Related360s}
+                <div id="threesixty" class="widget dark">
+					<a href="{360ClubFlash}" class="fancybox flash_link"><span>360</span> VIEW</a>
+					<img src="{360ClubThumbnail}" border="0" />
+					<div class="clear"></div>
+				</div>
+                {/Related360s}
+            {/if}
+		
+            {embed="basic/.galleryRight" entryID="{entry_id}"}
+				
+                
+            {embed="basic/.dealerRight"}		
+			</div>
+			<div class="clear"></div>
+		</div>
+	{/exp:channel:entries}
+    
+	{embed="basic/.footer"}
+</div>
+</body>
+</html>
