@@ -86,7 +86,7 @@ $(document).ready
 
 function LoadContentInLightWindow(element, strUrl, strText,  strContentType, strProductType, strContentHeader)
 {	
-	var pnlLightbox = $('#lightbox');
+	var pnlLightbox = $('#zoom_content');
 	//alert(strProductType + strContentHeader);
 	var imageHeaderSrc = "";
 	if(strContentHeader == "Driver Technology")
@@ -124,7 +124,6 @@ function LoadContentInLightWindow(element, strUrl, strText,  strContentType, str
 	
 	imageHTML += "</div>"
 	pnlLightbox.html(imageHTML);	
-	$('#zoom_content').html('test');
 	SetUpGalleryImageNav($(element).parent().find('> a').index(element), GetGalleryImageCount(strProductType), strProductType); 
 }
   

@@ -2,10 +2,10 @@
 #top_bar{background-color:#000; height:64px;position:relative;z-index:99;}
 #top_bar .container{width:960px; height:64px; text-align:left; margin:0 auto}
 #top_bar img.cobraLogo{float:left; display:inline}
-#top_bar ul#top_links{float:right; display:inline; }
-#top_bar ul#top_links li{float:left; display:inline; margin:5px 0 0 0; padding:0 30px 0 0}
-#top_bar ul#top_links li a{color:#CCC; text-decoration:none}
-#top_bar ul#top_links li a:hover{color:#FFF; text-decoration:underline}
+#top_links{float:right; display:inline; margin:0; }
+#top_links li{float:left; display:inline; margin:5px 0 0 0; padding:0 30px 0 0}
+#top_links li a{color:#CCC; text-decoration:none}
+#top_links li a:hover{color:#FFF; text-decoration:underline}
 
 
 /* OUTDATED - NEW COUNTRY CODE CSS REPLACES

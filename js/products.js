@@ -124,7 +124,7 @@ function loadFlash(swf)
 
 function LoadContentInLightWindow(element, strUrl, strContentType)
 {
-  var pnlLightbox = $('#lightbox'); 
+  var pnlLightbox = $('#zoom_content'); 
 
   if(strContentType == "image")
   {

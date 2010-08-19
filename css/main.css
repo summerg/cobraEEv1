@@ -38,14 +38,14 @@ a.btn { padding:5px 8px; font-weight:700; font-size:0.9em; text-shadow:0px 0px 2
 a.btn:hover { color:#F2CD02; background-image:none; border:1px solid #fff; }
 div.btn-container { float:right; width:inherit; }
 div.btn-container .btn { float:right; margin-left:5px; }
-div.btn-container p { padding:5px 2px 5px 10px; margin:0; display:block; float:left; }
+div.btn-container p { padding:5px 2px 5px 10px; margin:0; display:block; float:right; }
 .widget div.btn-container { margin:-3.4em 0.66em 0 0; }
 /* Blue */
 .widget.blue h2.stratum { color:#fff; background:#3588b7 url(/images/h2-bg-tile-blue.gif) repeat-x top left; text-shadow:0px 0px 2px #3588b7; }
 .blue a.btn { color:#397899; text-shadow:0px 0px 2px #fff; background:#c5ecff url(/images/btn-bg-blue.gif) repeat-x top left; border:1px solid #3588b7; }
 .blue a.btn:hover { color:#c5ecff; text-shadow:0px 0px 2px #424242; background:#397899 none; border:1px solid #83b6d3; }
 /* Dark */
-.widget.dark { margin-bottom:10px; color:#fff; background:#060606 url(/images/gradient-tile-464646-060606.jpg) repeat-x top left; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.widget.dark { margin-bottom:10px; color:#fff; background:#060606 url(/images/gradient-tile-464646-060606.jpg) repeat-x top left; border:none; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 .widget.dark h2.stratum { color:#fff; background:transparent none; border-bottom:none; padding:0.42em 0.35em; }
 .widget.dark h3 { color:#ffcc00; }
 .widget.dark h4, .widget.dark h5 { color:#999; }
@@ -136,14 +136,14 @@ div.slash_bar{width:960px; height:20px; background:url("/images/slash_bar.jpg") 
 #social_links a#rss:hover, #social_links a#facebook:hover, #social_links a#twitter:hover{ color:#000 }
 
 #footer{ background:#e8e8e8; margin:0 auto; _margin:0; padding:0; text-align:left}
-#footer ul.footer_headers{margin:0; padding:15px 0 0 25px; list-style:none}
-#footer ul.footer_headers li{color:#000; font-weight:bold; float:left; display:inline; margin:0; padding:0; border-bottom:1px solid #cdcdcd;}
-#footer ul.footer_headers li.corporate, #footer ul.footer_headers li.popular{width:350px}
-#footer ul.footer_headers li.fitting{width:220px}
-#footer #footer_links{margin:0; padding:15px 0 0 25px}
-#footer #footer_links ul.link_lists{float:left; display:inline; margin:0 0 15px 0; padding:0; width:175px; _width:auto; list-style:none; line-height:20px}
-#footer #footer_links ul.link_lists li a{color:#666; text-decoration:none; padding:2px 3px; margin:0; }
-#footer #footer_links ul.link_lists li a:hover{color:#000; background:#f4f4f4; }
+ul.footer_headers{margin:0; padding:15px 0 0 25px; list-style:none}
+ul.footer_headers li{color:#000; font-weight:bold; float:left; display:inline; margin:0; padding:0; border-bottom:1px solid #cdcdcd;}
+ul.footer_headers li.corporate, #footer ul.footer_headers li.popular{width:350px}
+ul.footer_headers li.fitting{width:220px}
+#footer_links{margin:0; padding:15px 0 0 25px}
+ul.link_lists{float:left; margin:0 0 15px 0; padding:0; width:175px; list-style:none; list-style-image:none; line-height:20px}
+ul.link_lists li a, ul.link_lists li a:visited {color:#666; text-decoration:none; padding:2px 3px; margin:0; }
+ul.link_lists li a:hover{color:#000; background:#f4f4f4; }
 
 #legal { color:#424242; text-align:center; margin:1em 0 2em 0; }
 
@@ -243,8 +243,8 @@ input.btn:hover { color:#F2CD02; background-image:none; border:1px solid #fff; c
 #top_links .dropdown a:hover { text-decoration:none; }
 #top_links .dropdown dt a { background:url("/images/international/flags_btn_top.jpg") no-repeat scroll 0 0 transparent; display:block; width:78px; height:32px; margin:0; text-indent:-999em; }
 #top_links .dropdown dt a.hover { background-position:0px -32px; }
-#top_links .dropdown dd ul { border:none; }
-#top_bar ul#top_links li.flags { margin:0; }
+#top_links .dropdown dd ul { border:none;  }
+#top_bar ul#top_links li.flags { margin:0; padding:0; }
 
 .dealer-locator .dropdown dd ul { width:58px; }
 .dealer-locator .dropdown dd li a { width:58px; padding:2px 0; text-align:center; }
@@ -257,8 +257,9 @@ input.btn:hover { color:#F2CD02; background-image:none; border:1px solid #fff; c
 ul.product-list { list-style:none; list-style-image:none; margin:0; padding:0;}
 ul.product-list li.product { padding:1em 0; border-bottom:1px solid #ccc; }
 ul.product-list li.product.last { border-bottom:none; }
+ul.product-list li.product .desc a { white-space:nowrap; }
 
-ul.product-list li.product img { vertical-align:middle; margin-bottom:0.5em; }
+ul.product-list li.product div.product-image { width:79px; margin-right:10px; float:left; }
 div.tech_desc h3{ padding-left:25px; background:url(/images/products/tech_trip_dots.png) no-repeat 0px -2px; }
 div.tech_desc p, tyldiv.tech_desc li { color:#666; }
 

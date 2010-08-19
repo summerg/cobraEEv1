@@ -23,7 +23,7 @@
  * simple relative path or it can be a full server path.
  * 
  */
-	$system_path = './system';
+	$system_path = './c0braad1n';
 
 /*
  * --------------------------------------------------------------------

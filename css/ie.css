@@ -1,6 +1,8 @@
 input.btn { padding:2px 4px; }
 .dropdown dd ul li { height:15px; }
 .footer-widget { height:117px; }
+#footer { height:160px; }
+.col-gutter { padding-right:19px; }
 
 /*
  * FancyBox - jQuery Plugin
